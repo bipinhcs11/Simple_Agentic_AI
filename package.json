@@ -1,15 +1,32 @@
 {
-  "name": "whatsapp-auto-reply-bot",
+  "name": "whatsapp-gemini-bot",
   "version": "1.0.0",
-  "description": "WhatsApp bot that auto-replies to messages in a specific group",
+  "description": "WhatsApp bot integrated with Google's Gemini AI for intelligent auto-replies",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "clean": "rm -rf whatsapp-sessions .wwebjs_auth .wwebjs_cache"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "gemini",
+    "ai",
+    "auto-reply"
+  ],
+  "author": "bipinhcs11",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bipinhcs11/Simple_Agentic_AI"
   },
   "dependencies": {
     "@google/generative-ai": "0.1.3",
     "dotenv": "^16.5.0",
     "node-fetch": "^2.7.0",
     "whatsapp-web.js": "^1.30.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
   }
 }
