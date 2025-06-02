@@ -1,0 +1,15 @@
+{
+  "name": "whatsapp-auto-reply-bot",
+  "version": "1.0.0",
+  "description": "WhatsApp bot that auto-replies to messages in a specific group",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@google/generative-ai": "0.1.3",
+    "dotenv": "^16.5.0",
+    "node-fetch": "^2.7.0",
+    "whatsapp-web.js": "^1.30.0"
+  }
+}
